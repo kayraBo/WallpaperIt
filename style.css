@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 0.6px;
+  font-family: Avenir;
+}
+
+.banner{
+    background-color: #7fc6ac;
+    letter-spacing: 2.24px; 
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 0;
+    position: relative;
+    font-family: Avenir;
+    text-align:center;
+    cursor: pointer;
+  }
+ 
+  @media screen and (max-width: 993px) {
+      .banner{
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.68px;
+        padding: 10px 0;
+     }
+  }
+
+.close_button{
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    height: 15px;
+    border:none;
+    background: url(img/wallpaperit_sprite.png) left -26px top -64px/110px no-repeat;
+    cursor: pointer;
+}
+
+.header{
+    padding-bottom: 1.875rem!important;
+    padding-top: 1.875rem!important;
+    margin-left: 1.25rem!important;
+    margin-right: 1.25rem!important;
+    display: flex!important;
+    flex-wrap: nowrap!important;
+    justify-content: space-between!important;
+    align-items: center!important;
+    position: relative;
+}
+
+.no_margin_padding{
+  margin:0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+form.search input[type=text]{
+    width:400px;
+    height:41px;
+    border-radius:25px;
+    border: 2px solid #7fc6ac;
+    color: #000;
+    font-size: 14px;
+    font-family: Avenir;
+    text-align: left;
+    display: block;
+    padding-left: 20px;
+  }
+
+form.search button {
+    height: 25px;
+    width: 40px;
+    border: none;
+    background: url(img/wallpaperit_sprite.png) no-repeat;
+    background-size: 145px;
+    background-position: left -43px top -47px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.menu {
+  font-size: 12px;
+  letter-spacing: .72px;
+  font-family: Avenir;
+  display: flex;
+  gap: 60px;
+}
+
+.sign-in-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(img/wallpaperit_sprite.png) no-repeat;
+  background-position: left -112px top -55px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.wishlist-icon {
+  width: 36px;
+  height: 30px;
+  display: block;
+  background: url(img/wallpaperit_sprite.png) no-repeat;
+  background-position: left -8px top -58px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.bag-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(img/wallpaperit_sprite.png) no-repeat;
+  background-position: left -6px top -108px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.nav_bar {
+  position: relative;
+}
+
+.dropdown{
+  display: none;
+  padding: 16px 0 2px;
+  border-bottom: 4px solid #7fc6ac;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.has-sub-menu:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(img/wallpaperit_sprite.png) no-repeat;
+  background-position: left -159px top -8px;
+  cursor: pointer;
+}
+
+.messages{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 17px 0;
+}
+
+.messages:hover {
+  text-decoration: underline;
+}
+
+
+.has-tick :before {
+    width: 13.1px;
+    height: 9.6px;
+    margin-right: 3px;
+    display: block;
+    background: url(img/wallpaperit_sprite.png) no-repeat;
+    background-position: left -60px top -47px;
+    margin: 0 auto;
+}
+
+.messages span{
+    font-family: 'DMSerif Regular';
+    color: #161615;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.grid-item {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.green-container {
+  display: grid;
+  padding: 3.50rem 3.50rem 3rem 3.50rem;
+  background-color: #1D4435;
+}
+
+.green-container-item{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.sinful-style-img{
+  margin-bottom: 3rem;
+}
+
+.button {
+  background-color: #E4BE8C;
+  color: black;
+  font-family: "Avenir-Medium";
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .078rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 1.75rem;
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+}
+
+.envy-img {
+  margin-top: 3rem;
+  max-height: 3.5rem;
+}
+
+.our-brands {
+  padding: 0.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+}
+
+.our-brands-title {
+  padding: 4rem 1rem;
+  font-family: "DMSerif Regular";
+  font-size: 34px;
+  font-weight: bold;
+  color: #000;
+}
+
+.our-brands-title span{
+  font-style: italic!important;
+  color: #6ecfb2!important;
+}
+
+.logos-container {
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+
+.brand-item-image{
+  object-fit: cover;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
