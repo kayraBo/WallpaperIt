@@ -5,9 +5,10 @@
 
 a{
   text-decoration: none;
-  color: #000;
+  color: #000!important;
   letter-spacing: 0.6px;
   font-family: Avenir;
+  margin-bottom: 10px;
 }
 
 .banner{
@@ -31,6 +32,11 @@ a{
         padding: 10px 0;
      }
   }
+
+  .banner a:hover {
+    text-decoration: underline !important;
+    color: blue !important;
+}
 
 .close_button{
     position: absolute;
@@ -67,6 +73,12 @@ a{
   align-items: center;
   justify-content: flex-end;
   position: relative;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1151px){
+.search {
+    width: 180px;
+}
 }
 
 form.search input[type=text]{
@@ -171,10 +183,8 @@ form.search button {
     width: 13.1px;
     height: 9.6px;
     margin-right: 3px;
-    display: block;
-    background: url(img/wallpaperit_sprite.png) no-repeat;
-    background-position: left -60px top -47px;
-    margin: 0 auto;
+    display: inline-block;
+    background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/tick_icon.svg);background: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/tick_icon.svg) no-repeat;
 }
 
 .messages span{
@@ -189,12 +199,12 @@ form.search button {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
   overflow: hidden;
-  height: 100%;
+  height: 410px;
   width: 100%;
   align-items: center;
 }
 
-.grid-item {
+.grid-container .grid-item {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -203,14 +213,10 @@ form.search button {
 
 .green-container {
   display: grid;
-  padding: 3.50rem 3.50rem 3rem 3.50rem;
-  background-color: #1D4435;
-}
-
-.green-container-item{
-  display: grid;
   align-items: center;
   justify-items: center;
+  padding: 7rem 7rem 7rem 7rem;
+  background-color: #1D4435;
 }
 
 .sinful-style-img{
@@ -226,19 +232,22 @@ form.search button {
   letter-spacing: .078rem;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
-  border-radius: 1.75rem;
+  border-radius: 3rem;
   cursor: pointer;
   text-align: center;
   width: 50%;
 }
 
 .envy-img {
-  margin-top: 3rem;
-  max-height: 3.5rem;
+  margin: 3rem;
+  max-height: 5.5rem;
 }
 
 .our-brands {
-  padding: 0.5rem 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   overflow: hidden;
@@ -268,4 +277,496 @@ form.search button {
   width: 100%;
   justify-content: center;
   align-content: center;
+}
+
+/*  */
+
+.grid-brands {
+  padding: 0 5rem;
+  overflow: hidden;
+}
+
+.grid-brands img {
+  width: 100%;
+}
+
+.wall-murals {
+  padding: 3rem;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.wall-murals img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.second-row {
+  margin-top: 3rem;
+}
+
+.no-padding {
+  padding-left: 0 !important;
+}
+
+.overlay-bold-text {
+  font-size: 32px;
+  font-family: 'DMSerif Regular';
+  font-weight: bold;
+  color: #000;
+}
+
+.overlay-smaller-bold-text {
+  font-size: 20px;
+  font-family: 'DMSerif Regular';
+  font-weight: bold;
+  color: #000;
+}
+
+.overlay-light-text{
+  text-transform: uppercase;
+  font-weight: light;
+  font-size: 18px;
+  color: #000;
+}
+
+.overlay {
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  margin-bottom: 3.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0 0 1.5rem;
+}
+
+.welcome-to {
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.welcome-to-title {
+  font-size: 36px;
+  font-family: 'DMSerif Regular';
+  font-weight: bold;
+  margin-bottom: 8rem;
+  letter-spacing: 0.5px;
+}
+
+.welcome-to-title span {
+  font-style: italic;
+  color:#7FC6AC;
+}
+
+.welcome-container {
+  font-family: 'Avenir-Book';
+  font-size: 18px;
+  color: #161615;
+  padding: 3rem;
+}
+
+.welcome-to-text {
+  margin-bottom: 2rem;
+}
+
+.logo-icon img {
+  width: 4%;
+}
+
+.colorful-path-banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 5rem;
+}
+
+.colorful-path-container {
+  background-color: #567761;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.joules-logo img {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.colorful-path-logo img {
+  width: 170%;
+}
+
+.shop-wallpaper-button {
+  margin-top: 2rem;
+  color: #1c1c1b !important;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  padding: 1.2rem 4.5rem;
+  background-color: white;
+  border-radius: 5rem;
+}
+
+.colorful-path-image img{
+  height: 55rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wallpaper-paint-banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+}
+
+.wallpaper-paint-banner img{
+  height: 50rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wallpaper-paint-banner-container {
+  background-color: #192E31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.next-logo {
+  width: 40rem;
+}
+
+.next-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wallpaper-paint-banner-text {
+  font-family: 'NextDisplay-Regular', 'Helvetica', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 43px;
+}
+
+.wallpaper-paint-banner-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.wallpaper-paint-banner-button {
+  color: #192E31 !important;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 1.3rem 9rem;
+  background-color: #E3D6C9;
+  border-radius: 4rem;
+}
+
+.ratings {
+  padding: 5rem 10rem;
+}
+
+.ratings-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: 'DMSerif Regular';
+  font-weight: bolder;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+}
+
+.powered-by {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.powered {
+  font-size: 1rem;
+  color: rgb(153, 153, 153);
+}
+
+.bazaarvoice-logo {
+  width: 5rem;
+  margin-bottom: 1.25rem;
+}
+
+.numbers-rating-top {
+  font-family: 'Avenir';
+  color: rgb(153, 153, 153);
+  font-weight: normal;
+  font-size:  2.5rem;
+}
+
+.numbers-rating-top span {
+  color: #000;
+  font-weight: 500;
+}
+
+.ratings-stars-top {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #FDCC0F;
+}
+
+.ratings-stars {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #FDCC0F;
+}
+
+.ratings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: stretch;
+}
+
+.ratings-view-all {
+  font-family: 'Avenir';
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #D48B9E !important;
+  text-decoration: underline !important;
+  font-weight: normal;
+}
+
+.single-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1pt solid rgb(238, 238, 238);
+  padding: 1rem 2rem;
+}
+
+.star-count, .posted {
+  display: flex;
+  gap: 1rem;
+}
+
+.rating-stars {
+  font-family: Avenir;
+  font-size: 1.5rem;
+}
+
+.numbers-rating{
+  font-family: Avenir;
+  font-size: 1.5rem;
+}
+
+.numbers-rating span {
+  color: #000;
+  font-weight: bold;
+}
+
+.numbers-rating {
+  font-family: Avenir;
+  color: rgb(153, 153, 153);
+  font-size: 1.5rem;
+}
+
+.ratings-text {
+  font-family: Avenir;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.posted-by {
+  font-family: Avenir;
+  font-size: 1rem;
+  color: rgb(153, 153, 153);
+}
+
+.date {
+  font-family: Avenir;
+  margin-left: 0.5em;
+  font-size: 1rem;
+  color: rgb(153, 153, 153);
+}
+
+.view-all {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #1c1c1b;;
+  font-size: 13px;
+  font-family: 'Avenir';
+  padding: 2rem;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list {
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1.08px;
+  font-family: Avenir;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+.footer-title {
+  font-family: 'DMSerif Regular';
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.footer-list li {
+  padding: 2.5rem;
+}
+
+.footer-list li a {
+  color: white !important;
+  font-size: 18px;
+}
+
+.footer-list li a:hover {
+  text-decoration: underline !important;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Avenir';
+}
+
+.newsletter-title {
+  text-align: left;
+  color: white;
+}
+
+form.email input[type=text] {
+  border: none;
+  border-radius: 2rem;
+  padding: 1.2rem 15rem 1.2rem 2rem;
+  font-size: 1.5rem;
+}
+
+.newsletter-input:focus {
+  outline: none;
+}
+
+.consent-text {
+  color: white;
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
+.subscribe-button {
+  border: 0;
+  border-radius: 3rem;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #6eceb2;
+}
+
+.footer-bottom {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 3rem 2rem;
+}
+
+.footer-bottom .socials {
+  color: #1a1a1a;
+}
+
+.select-contry {
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  margin-bottom: -10px;
+}
+
+.facebook {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/facebook_icon.svg);
+}
+
+.instagram {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/instagram_icon.svg);
+}
+
+.youtube {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/youtube_icon.svg);
+}
+
+.pinterest {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/pinterest_icon.svg);
+}
+
+.copyright {
+  font-size: 16px;
+}
+
+.credit-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cards-icon {
+  height: 35px;
+  width: 55px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.visaCard  {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/visa_card.svg);
+}
+
+.americanExpress {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/americanExpress_icon.svg);
+}
+
+.maestroCard {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/maestroCard_icon.svg);
+}
+
+.masterCard {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/mastercard_icon.svg);
+}
+
+.payPal {
+  background-image: url(https://www.wallpaper-it.com/on/demandware.static/Sites-wallpaper-it-Site/-/en_GB/images/icons/payPal_icon.svg);
+  width: 78px;
 }

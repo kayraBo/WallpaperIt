@@ -7,13 +7,18 @@
     <link rel="icon" type="image/x-icon" href="img/wi-fav.webp">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 <body>
     <div class="banner" id="banner">
         
         <div class="header-banner">
             <div>New Year Sale! 20% Off Selected Wallpapers !</div>
-            <button class="close_button"></button>
+            <button class="close_button">&times;</button>
             </div>
         </div>
     </div>
@@ -73,7 +78,7 @@
             <div class="green-container">
                 <img  class="sinful-style-img" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw7b653d08/svg/envy-homepage-banner-sinful-style.svg" alt="Discover your Sinful Style">
                 <a href="#" class="button green-container-item" aria-label="Shop Envy Wallpaper">Shop Wallpaper</a>
-                <img class="envy-img green-container-item" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw13728f96/svg/envy-homepage-banner-logo.svg" alt="Envy">
+                <img class="envy-img" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw13728f96/svg/envy-homepage-banner-logo.svg" alt="Envy">
             </div>
             <div class="grid-item"><img src="img/envy-homepage-banner-right-image.jpg" width="100%"></div>   
         </div>
@@ -98,9 +103,335 @@
           <div class="logos-container">
             <a href="#"><img class="brand-item-image" src="img/contour-logo.webp"/></a>
           </div>
-          <div class="logos-container">
-             <a href="#"><img class="brand-item-image" src="img/boutique-logo.png"/></a>
-          </div>
         </div>
+
+        <div class="grid-brands">
+            <div class="row first-row">
+                <div class="col-lg-6 position-relative no-padding">
+                    <a href="#">
+                        <img alt="Joules Paint" class="object-fit" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dwdd4511fd/wallpaperit/images/Joules_Sub_Banner.jpg" title="">
+                        <div class="overlay">
+                            <h3 class="overlay-bold-text">Joules Paint</h3>
+                            <span class="overlay-light-text">Shop Now</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 position-relative no-padding">
+                            <a href="#">
+                                <img alt="Superfresco Easy Paint" class="object-fit w-100" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw8e648ee5/wallpaperit/images/sfe-paint-hpg.jpg">
+                                <div class="overlay">
+                                    <h3 class="overlay-smaller-bold-text">Superfresco Easy Paint</h3>
+                                    <span class="overlay-light-text">Shop Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 position-relative no-padding">
+                            <a href="#">
+                                <img alt="Our Newest Collections" class="object-fit w-100" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw522c79bd/wallpaperit/images/new_2021.jpg">
+                                <div class="overlay">
+                                    <h3 class="overlay-smaller-bold-text">Our Newest Collections</h3>
+                                    <span class="overlay-light-text">Shop the collection</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-12 wall-murals position-relative no-padding">
+                            <a href="#">
+                                <img alt="Wall Murals" class="object-fit w-100 overflow-hidden h-auto" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw83951b06/images/WPITGrid_WallMurals.jpg">
+                                <div class="overlay">
+                                    <h3 class="overlay-bold-text">Wall Murals</h3>
+                                    <span class="overlay-light-text">Discover More</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row second-row">
+                <div class="col-md-3 position-relative no-padding">
+                    <a href="#">
+                        <img alt="Wood and Brick" class="object-fit w-100" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw0786373a/wallpaperit/images/geo_2021.jpg">
+                        <div class="overlay">
+                            <h3 class="overlay-smaller-bold-text">Geometric Wallpaper</h3>
+                            <span class="overlay-light-text">Shop now</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 position-relative no-padding">
+                    <a href="#">
+                        <img alt="Wood and Brick" class="object-fit w-100" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dwe6f61d0f/wallpaperit/images/grey_2021.jpg">
+                        <div class="overlay">
+                            <h3 class="overlay-smaller-bold-text">Grey Wallpaper</h3>
+                            <span class="overlay-light-text">Shop now</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 position-relative no-padding">
+                    <a href="#">
+                        <img alt="Wood and Brick" class="object-fit w-100" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dwb8730341/wallpaperit/images/blue_2021.jpg">
+                        <div class="overlay">
+                            <h3 class="overlay-smaller-bold-text">Blue Wallpaper</h3>
+                            <span class="overlay-light-text">Shop now</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 position-relative no-padding">
+                    <a href="#">
+                        <img alt="Wood and Brick" class="object-fit w-100" src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw7c9b35b3/wallpaperit/images/kids_2021.jpg">
+                        <div class="overlay">
+                            <h3 class="overlay-smaller-bold-text">Kids Wallpaper</h3>
+                            <span class="overlay-light-text">Shop now</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-to">
+            <div class="col-md-12 text-center">
+                <span class="welcome-to-title">Welcome to Wallpaper<span>it</span></span>
+                <div class="welcome-container">
+                    <p class="welcome-to-text">Designed in our studio, our fun, bright and affordable wallpapers are an easy and stress-free way to transform your house into a home. Too good to be true?</p>
+                    <p class="welcome-to-text">Have a little scroll and see for yourself…</p>
+                    <div class="logo-icon">
+                        <img src="img/wi-fav.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="colorful-path-banner">
+            <div class="colorful-path-container">
+                <div class="joules-logo">
+                    <img src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw4bb98d25/svg/joules-logo.svg" alt="Joules" alt="Joules">
+                </div>
+                <div class="colorful-path-logo">
+                    <img src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw82609efc/svg/type-take-colourful-path.svg" alt="Take the colourful path">
+                </div>
+                <div class="shop-wallpaper-button">
+                    <a href="#">Shop Wallpaper</a>
+                </div>
+            </div>
+            <div class="colorful-path-image">
+                <img src="img/twilight-ditsy-antique-hpb.jpg">
+            </div>
+        </div>
+        
+        <div class="wallpaper-paint-banner">
+            <div class="next-banner-left">
+                <img src="img/retroshapes-next.jpg">
+            </div>
+            <div class="wallpaper-paint-banner-container">
+                <div class="next-logo">
+                    <img src="https://www.wallpaper-it.com/on/demandware.static/-/Library-Sites-Library-Wallpaper/default/dw4430f45d/images/next-logo.png">
+                </div>
+                <div class="next-title">
+                    <h1 class="wallpaper-paint-banner-text">Wallpaper &amp; Paint</h1>
+                </div>
+                <div class="wallpaper-paint-banner-buttons">
+                    <a class="wallpaper-paint-banner-button" href="#">Shop wallpaper</a>
+                    <a class="wallpaper-paint-banner-button" href="#">Shop paint</a>
+                 </div>
+            </div>
+            <div class="next-banner-right">
+                <img src="img/ochreyellow-next.jpg">
+            </div>
+        </div>
+
+        <div class="ratings">
+            <div class="ratings-title">
+                <p>Customers Rate Us</p>
+                <p class="numbers-rating-top"> <span>4.7</span> / 5</p>
+                <span class="ratings-stars-top">★★★★★</span>
+                <a class="ratings-view-all" href="#">View all <span class="ratings-count">1,639</span> reviews</a>
+            </div>
+            <div class="powered-by">
+                <p class="powered">Powered by</p>
+                <img class="bazaarvoice-logo" alt="Bazaarvoice" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9Ii01MzIgNzgzIDcyLjEgMTEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTUzMiA3ODMgNzIuMSAxMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtlbmFibGUtYmFja2dyb3VuZDpuZXcgICAgO30KCS5zdDF7ZmlsbDojMDFBQjhFO30KCS5zdDJ7ZmlsbDojMDAzRDRDO30KPC9zdHlsZT4KPGcgaWQ9IlhNTElEXzFfIiBjbGFzcz0ic3QwIj4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0tNTMyLDc4NXYtMC44aDIuMXYzLjRjMC43LTAuNCwxLjMtMC42LDEuOS0wLjZzMSwwLjEsMS4zLDAuM3MwLjYsMC40LDAuOCwwLjdjMC4zLDAuNiwwLjUsMS40LDAuNSwyLjUKCQljMCwwLjktMC4yLDEuNy0wLjYsMi4zYy0wLjQsMC43LTEuMiwxLTIuMiwxcy0xLjktMC4yLTIuOC0wLjZWNzg1SC01MzJ6IE0tNTI5LjksNzkyLjZjMC41LDAuMiwwLjksMC4zLDEuNCwwLjNzMC44LTAuMSwxLjEtMC4yCgkJYzAuNS0wLjMsMC44LTEsMC44LTIuMmMwLTEtMC4xLTEuNy0wLjQtMi4xYy0wLjMtMC4zLTAuNy0wLjUtMS4yLTAuNXMtMS4xLDAuMi0xLjcsMC41Vjc5Mi42eiBNLTUyNC4zLDc5MS45YzAtMC42LDAuMi0xLDAuNi0xLjQKCQlzMS0wLjUsMS44LTAuNmwxLjctMC4xdi0wLjRjMC0wLjYtMC4xLTAuOS0wLjMtMS4ycy0wLjYtMC4zLTEuMi0wLjNzLTEuMiwwLjEtMS45LDAuNGMtMC4xLTAuMy0wLjItMC41LTAuMi0wLjcKCQljMC44LTAuMywxLjUtMC41LDIuMy0wLjVzMS40LDAuMiwxLjgsMC41czAuNiwwLjksMC42LDEuN3YzLjZoMWwwLjEsMC42Yy0wLjMsMC4yLTAuOCwwLjMtMS4zLDAuM2MtMC4zLDAtMC41LTAuMS0wLjYtMC4yCgkJcy0wLjItMC4zLTAuMi0wLjZjMCwwLDAsMCwwLDBjLTAuNiwwLjUtMS4yLDAuOC0xLjksMC44Yy0wLjEsMC0wLjIsMC0wLjUsMHMtMC41LTAuMS0wLjctMC4ycy0wLjUtMC4zLTAuNi0wLjUKCQlDLTUyNC4yLDc5Mi44LTUyNC4zLDc5Mi4zLTUyNC4zLDc5MS45eiBNLTUyMi44LDc5MWMtMC4yLDAuMi0wLjMsMC41LTAuMywwLjhzMC4xLDAuNiwwLjMsMC44czAuNSwwLjMsMC45LDAuMwoJCWMwLjQsMCwwLjgtMC4xLDEuMi0wLjRjMC4yLTAuMSwwLjQtMC4zLDAuNS0wLjR2LTEuNmwtMS42LDAuMUMtNTIyLjMsNzkwLjctNTIyLjYsNzkwLjgtNTIyLjgsNzkxeiBNLTUxNy41LDc5My43di0wLjhsMy44LTQuOQoJCWgtMi43djEuMWgtMC44di0xLjloNC45djAuOGwtMy44LDQuOWgzLjF2LTFoMC45djEuOUgtNTE3LjV6IE0tNTExLjUsNzkxLjljMC0wLjYsMC4yLTEsMC42LTEuNHMxLTAuNSwxLjgtMC42bDEuNy0wLjF2LTAuNAoJCWMwLTAuNi0wLjEtMC45LTAuMy0xLjJzLTAuNi0wLjMtMS4yLTAuM3MtMS4yLDAuMS0xLjksMC40Yy0wLjEtMC4zLTAuMi0wLjUtMC4yLTAuN2MwLjgtMC4zLDEuNS0wLjUsMi4zLTAuNXMxLjQsMC4yLDEuOCwwLjUKCQlzMC42LDAuOSwwLjYsMS43djMuNmgxbDAuMSwwLjZjLTAuMSwwLjEtMC40LDAuMS0wLjYsMC4ycy0wLjUsMC4xLTAuNywwLjFzLTAuNC0wLjEtMC41LTAuMnMtMC4yLTAuMy0wLjItMC42YzAsMCwwLDAsMCwwCgkJYy0wLjUsMC40LTAuOSwwLjctMS4zLDAuOGMtMC4zLDAuMS0wLjYsMC4xLTAuOSwwLjFzLTAuNSwwLTAuOC0wLjFzLTAuNC0wLjItMC41LTAuM3MtMC4yLTAuMy0wLjMtMC41CgkJQy01MTEuNCw3OTIuNi01MTEuNSw3OTIuMy01MTEuNSw3OTEuOXogTS01MTAsNzkxYy0wLjIsMC4yLTAuMywwLjUtMC4zLDAuOHMwLjEsMC42LDAuMywwLjhzMC41LDAuMywwLjksMC4zCgkJYzAuNCwwLDAuOC0wLjEsMS4yLTAuNGMwLjItMC4xLDAuNC0wLjMsMC41LTAuNHYtMS42bC0xLjYsMC4xQy01MDkuNSw3OTAuNy01MDkuOCw3OTAuOC01MTAsNzkxeiBNLTUwNC44LDc5MS45CgkJYzAtMC42LDAuMi0xLDAuNi0xLjRzMS0wLjUsMS44LTAuNmwxLjctMC4xdi0wLjRjMC0wLjYtMC4xLTAuOS0wLjMtMS4ycy0wLjYtMC4zLTEuMi0wLjNzLTEuMiwwLjEtMS45LDAuNAoJCWMtMC4xLTAuMy0wLjItMC41LTAuMi0wLjdjMC44LTAuMywxLjUtMC41LDIuMy0wLjVzMS40LDAuMiwxLjgsMC41czAuNiwwLjksMC42LDEuN3YzLjZoMWwwLjEsMC42Yy0wLjMsMC4yLTAuOCwwLjMtMS4zLDAuMwoJCWMtMC4zLDAtMC41LTAuMS0wLjYtMC4ycy0wLjItMC4zLTAuMi0wLjZjMCwwLDAsMCwwLDBjLTAuNiwwLjYtMS40LDAuOS0yLjIsMC45Yy0wLjQsMC0wLjctMC4xLTAuOS0wLjJzLTAuNS0wLjMtMC42LTAuNQoJCUMtNTA0LjcsNzkyLjgtNTA0LjgsNzkyLjMtNTA0LjgsNzkxLjl6IE0tNTAzLjYsNzkxLjhjMCwwLjcsMC40LDEsMS4yLDFjMC4zLDAsMC42LTAuMSwwLjktMC4yczAuNi0wLjMsMC44LTAuNnYtMS42bC0xLjYsMC4xCgkJYy0wLjQsMC0wLjcsMC4xLTEsMC4zUy01MDMuNiw3OTEuNS01MDMuNiw3OTEuOHogTS00OTgsNzkzLjd2LTAuOGgwLjlWNzg4aC0wLjl2LTAuOWgydjAuOWgwYzAuMy0wLjMsMC43LTAuNSwxLjEtMC43CgkJczAuOC0wLjMsMS4yLTAuM2MwLjIsMCwwLjMsMC4xLDAuMywwLjRjMCwwLjIsMCwwLjMtMC4xLDAuNnMtMC4yLDAuNC0wLjMsMC41bC0yLjMsMC4xdjQuM2gxdjAuOEgtNDk4eiBNLTQ2Miw3ODkuMgoJCWMtMC4yLTAuMi0wLjMtMC41LTAuMy0wLjhzMC4xLTAuNiwwLjMtMC44czAuNS0wLjMsMC44LTAuM3MwLjYsMC4xLDAuOCwwLjNzMC4zLDAuNSwwLjMsMC44cy0wLjEsMC42LTAuMywwLjhzLTAuNSwwLjMtMC44LDAuMwoJCVMtNDYxLjgsNzg5LjUtNDYyLDc4OS4yeiBNLTQ2Miw3OTMuMWMtMC4yLTAuMi0wLjMtMC41LTAuMy0wLjhzMC4xLTAuNiwwLjMtMC44czAuNS0wLjMsMC44LTAuM3MwLjYsMC4xLDAuOCwwLjNzMC4zLDAuNSwwLjMsMC44CgkJcy0wLjEsMC42LTAuMywwLjhzLTAuNSwwLjMtMC44LDAuM1MtNDYxLjgsNzkzLjMtNDYyLDc5My4xeiIvPgo8L2c+CjxnIGlkPSJYTUxJRF8yXyIgY2xhc3M9InN0MCI+Cgk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNLTQ5Mi40LDc4OHYtMC45aDEuNmwwLjksMi45bDAuOCwyLjdoMC4xYzAtMC4yLDAuMS0wLjQsMC4yLTAuNnMwLjEtMC40LDAuMi0wLjZjMC4yLTAuNSwwLjMtMC45LDAuNC0xLjIKCQljMC4yLTAuNiwwLjQtMS40LDAuOC0yLjRoLTAuNnYtMC45aDIuM3YwLjloLTAuNmMtMC42LDEuOC0xLjMsMy42LTIuMSw1LjZoLTEuNGwtMS44LTUuNkgtNDkyLjR6IE0tNDg1LjMsNzkwLjUKCQljMC0xLjEsMC4zLTIsMC45LTIuNmMwLjUtMC41LDEuMi0wLjgsMi0wLjhjMS4yLDAsMiwwLjUsMi41LDEuNWMwLjIsMC41LDAuNCwxLjIsMC40LDEuOWMwLDEuMi0wLjMsMi4xLTAuOSwyLjYKCQljLTAuNSwwLjUtMS4yLDAuNy0yLjEsMC43Yy0wLjUsMC0wLjktMC4xLTEuMy0wLjNjLTAuNC0wLjItMC43LTAuNC0wLjktMC43Qy00ODUuMSw3OTIuMi00ODUuMyw3OTEuNC00ODUuMyw3OTAuNXogTS00ODQuMSw3OTAuNQoJCWMwLDAuOSwwLjIsMS42LDAuNSwyYzAuMywwLjMsMC43LDAuNSwxLjMsMC41YzEuMiwwLDEuNy0wLjgsMS43LTIuNXMtMC42LTIuNS0xLjctMi41Yy0wLjMsMC0wLjYsMC4xLTAuOSwwLjIKCQljLTAuMywwLjEtMC40LDAuMy0wLjYsMC42Qy00ODQsNzg5LjItNDg0LjEsNzg5LjgtNDg0LjEsNzkwLjV6IE0tNDc4LjcsNzg4di0wLjhoMS44djUuN2gxdjAuNmMtMC4zLDAuMi0wLjcsMC4yLTEuMSwwLjIKCQljLTAuNCwwLTAuNi0wLjEtMC44LTAuMmMtMC4xLTAuMS0wLjItMC40LTAuMi0wLjdWNzg4SC00NzguN3ogTS00NzUsNzkwLjVjMC0xLjEsMC4zLTIsMC44LTIuN2MwLjItMC4yLDAuNS0wLjQsMC44LTAuNgoJCWMwLjQtMC4yLDAuOC0wLjIsMS40LTAuMnMxLjIsMC4xLDEuNywwLjR2MS43aC0wLjh2LTFjLTAuMy0wLjEtMC42LTAuMS0wLjktMC4xcy0wLjYsMC4xLTAuOSwwLjJzLTAuNSwwLjMtMC42LDAuNQoJCWMtMC4zLDAuNC0wLjUsMS4xLTAuNSwxLjlzMC4xLDEuNCwwLjQsMS44czAuOCwwLjYsMS40LDAuNnMxLjMtMC4xLDEuOS0wLjRsMC4zLDAuOGMtMC42LDAuMy0xLjQsMC41LTIuMywwLjUKCQlDLTQ3NC4xLDc5My44LTQ3NSw3OTIuNy00NzUsNzkwLjV6IE0tNDY5LjEsNzkwLjRjMC0wLjQsMC4xLTAuOCwwLjItMS4yczAuMi0wLjcsMC40LTAuOWMwLjEtMC4yLDAuMy0wLjQsMC41LTAuNgoJCWMwLjQtMC40LDEtMC42LDEuOC0wLjZjMSwwLDEuNywwLjMsMi4xLDFjMC4zLDAuNSwwLjUsMS4xLDAuNSwxLjdjMCwwLjEsMCwwLjMsMCwwLjR2MC42aC00LjNjMCwwLDAsMCwwLDAuMQoJCWMwLDEuNCwwLjYsMi4yLDEuOCwyLjJjMC42LDAsMS4zLTAuMSwyLjEtMC40bDAuMywwLjhjLTAuOCwwLjQtMS42LDAuNS0yLjQsMC41Qy00NjguMSw3OTMuOC00NjkuMSw3OTIuNy00NjkuMSw3OTAuNHoKCQkgTS00NjcuOSw3ODkuOWgzLjJjMC0xLTAuMy0xLjYtMC44LTEuOWMtMC4yLTAuMS0wLjQtMC4yLTAuNy0wLjJjLTAuNSwwLTAuOSwwLjItMS4yLDAuNkMtNDY3LjcsNzg4LjgtNDY3LjksNzg5LjMtNDY3LjksNzg5Ljl6IgoJCS8+CjwvZz4KPC9zdmc+Cg==">
+            </div>
+            <div class="ratings-grid">
+                <div class="single-rating">
+                    <div class="star-count">
+                        <span class="ratings-stars">★★★★★</span>
+                        <p class="numbers-rating"> <span>5</span> / 5</p>
+                    </div>
+                    <div class="ratings-text">
+                        <p>Fast service. Paper as described. I will add photo and more info when it is on the wall.</p>
+                    </div>
+                    <div class="posted">
+                        <p class="posted-by">Posted by Hazydays</p>
+                        <p class="date">17 days ago</p>
+                    </div>
+                </div>
+                <div class="single-rating">
+                    <div class="star-count">
+                        <span class="ratings-stars">★★★★★</span>
+                        <p class="numbers-rating"> <span>5</span> / 5</p>
+                    </div>
+                    <div class="ratings-text">
+                        <p>Excellent service arrived quickly no problems at all thank you !!</p>
+                    </div>
+                    <div class="posted">
+                        <p class="posted-by">Posted by Phoebe70</p>
+                        <p class="date">2 months ago</p>
+                    </div>
+                </div><div class="single-rating">
+                    <div class="star-count">
+                        <span class="ratings-stars">★★★★★</span>
+                        <p class="numbers-rating"> <span>5</span> / 5</p>
+                    </div>
+                    <div class="ratings-text">
+                        <p>This site had the exact wallpaper we were looking for, the service was fast and easy use. I was kept well informed regarding delivery, I will definitely use them again.</p>
+                    </div>
+                    <div class="posted">
+                        <p class="posted-by">Posted by Wilton82</p>
+                        <p class="date">2 months ago</p>
+                    </div>
+                </div><div class="single-rating">
+                    <div class="star-count">
+                        <span class="ratings-stars">★★★★★</span>
+                        <p class="numbers-rating"> <span>5</span> / 5</p>
+                    </div>
+                    <div class="ratings-text">
+                        <p>Good selection of wallpaper to choose from, easy purchase pricess and prompt delivery.</p>
+                    </div>
+                    <div class="posted">
+                        <p class="posted-by">Posted by LS2710</p>
+                        <p class="date">2 months ago</p>
+                    </div>
+                </div><div class="single-rating">
+                    <div class="star-count">
+                        <span class="ratings-stars">★★★★★</span>
+                        <p class="numbers-rating"> <span>5</span> / 5</p>
+                    </div>
+                    <div class="ratings-text">
+                        <p>Absolutely first class service! Ordered at around 17:30 on Friday night and arrived at 15;20 Saturday afternoon. Beautiful Josette wallpaper. Thank you</p>
+                    </div>
+                    <div class="posted">
+                        <p class="posted-by">Posted by Whiz27</p>
+                        <p class="date">3 months ago</p>
+                    </div>
+                </div><div class="single-rating">
+                    <div class="star-count">
+                        <span class="ratings-stars">★★★★★</span>
+                        <p class="numbers-rating"> <span>5</span> / 5</p>
+                    </div>
+                    <div class="ratings-text">
+                        <p>My wallpaper arrived quick and packaged well. Wallpaper seems to be of good quality have not used it yet</p>
+                    </div>
+                    <div class="posted">
+                        <p class="posted-by">Posted by Lynsall</p>
+                        <p class="date">5 months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a class="ratings-view-all" href="#">View all 1,639 reviews</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-container">
+        <footer>
+            <div class="footer footer-top row">
+                <div class="col-md-9">
+                    <div class="shopping-with-us footer-item col-md-3 col-12">
+                        <ul class="footer-list">
+                            <li class="footer-title">Shopping with Us</li>
+                            <li>
+                                <a href="#" title="Delivery and Returns">Delivery and Returns</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Wallpaper Sample Service">Wallpaper Sample Service</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Privacy Policy">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" title="sitemap">Site Map</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wallpaper-guides footer-item col-md-3 col-12" id="" data-parent="#footer-accordion">
+                        <ul class="footer-list">
+                            <li class="footer-title">Wallpaper Guides</li>
+                            <li>
+                                <a href="#">Wallpaper FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Wallpaper Guide</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">How to Hang Wallpaper</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">How to Remove Wallpaper</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">How to Hang a Wall Mural</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="visit-us footer-item col-12 col-md-3">
+                        <ul class="footer-list">
+                            <li class="footer-title">Visit Us</li>
+                            <li>
+                                <a href="#">Outlet Stores</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="help footer-item col-12 col-md-3">
+                        <ul class="footer-list">
+                            <li class="footer-title">How Can We Help?</li>
+                            <li class="">
+                                <a href="#" class="font-weight-light">Customer Service</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_top">Email Us</a>
+                            </li>
+                            <li>
+                                <a href="#" title="About Us">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="newsletter footer-item col-12 col-md-3">
+                    <h3 class="newsletter-title">Sign up to Our Newsletter</h3>
+                    <form class="email">
+                        <input type="text" placeholder="Enter email here">
+                        <p class="consent-text">By signing up you are consenting to receive the newsletter and other promotional materials from Wallpaper It.</p>
+                    </form>
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer footer-bottom">
+                <div class="socials">
+                    <select class="select-contry ">
+                        <option selected>UK - GBP</option>
+                        <option>United Kingdom</option>
+                        <option>USA</option>
+                    </select>
+                    <span class="icon facebook"></span>
+                    <span class="icon instagram"></span>
+                    <span class="icon youtube"></span>
+                    <span class="icon pinterest"></span>
+                </div>
+                <div class="copyright">
+                   <p>© 2023 WallpaperIt</p>
+                </div>
+                <div class="credit-cards">
+                    <span class="cards-icon visaCard"></span>
+                    <span class="cards-icon americanExpress"></span>
+                    <span class="cards-icon maestroCard"></span>
+                    <span class="cards-icon masterCard"></span>
+                    <span class="cards-icon payPal"></span>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
